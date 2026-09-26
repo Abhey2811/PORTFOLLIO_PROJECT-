@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABHEY SINGH RATHORE — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="titlebar">
+  <div class="titlebar-dots"><span></span><span></span><span></span></div>
+  <div class="titlebar-title">ABHEY SINGH RATHORE | PORTFOLLIO | LANDING PAGE </div>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
+    <span id="themeIcon">◑</span> <span id="themeLabel">Dark+</span>
+  </button>
+</div>
+
+<div class="app">
+
+  <!-- Activity bar -->
+  <div class="activity-bar">
+    <div class="activity-icon active" title="Explorer">⊞</div>
+    <div class="activity-icon" title="Search">⌕</div>
+    <div class="activity-icon" title="Source Control">⎇</div>
+    <div class="activity-icon" title="Extensions">⬡</div>
+  </div>
+
+  <!-- Sidebar / file tree -->
+  <aside class="sidebar">
+    <div class="sidebar-header">Explorer</div>
+    <div class="sidebar-project">PORTFOLIO</div>
+    <nav class="tree" id="tree">
+      <button class="tree-item" data-file="readme">
+        <span class="tree-icon">📄</span> README
+      </button>
+      <button class="tree-item" data-file="about">
+        <span class="tree-icon">📄</span> about
+      </button>
+      <button class="tree-item" data-file="skills">
+        <span class="tree-icon">📄</span> skills
+      </button>
+      <div class="tree-folder">
+        <span class="tree-icon">📁</span> projects
+      </div>
+      <button class="tree-item nested" data-file="project1">
+        <span class="tree-icon">📄</span> weather-dashboard.py
+      </button>
+      <button class="tree-item nested" data-file="project2">
+        <span class="tree-icon">📄</span> task-manager.js
+      </button>
+      <button class="tree-item nested" data-file="project3">
+        <span class="tree-icon">📄</span> campus-connect.html
+      </button>
+      <button class="tree-item" data-file="contact">
+        <span class="tree-icon">📄</span> contact.md
+      </button>
+    </nav>
+
+    <div class="sidebar-footer">
+      <a href="https://github.com/Abhey2811" target="_blank" rel="noopener" title="GitHub">GitHub</a>
+      <a href="https://linkedin.com/in/ABHEY-SINGH-RATHORE" target="_blank" rel="noopener" title="LinkedIn">LinkedIn</a>
+      <a href="rathorepvtabhey@gmail.com" title="Email">Email</a>
+    </div>
+  </aside>
+
+  <!-- Editor -->
+  <main class="editor">
+    <div class="tabs" id="tabs"></div>
+
+    <div class="content-scroll">
+      <div class="content-area" id="content"></div>
+    </div>
+
+    <div class="status-bar">
+      <span class="status-left">
+        <span class="status-branch">⎇ main</span>
+        <span id="statusMsg">Ready</span>
+      </span>
+      <span class="status-right">
+        <span>UTF-8</span>
+        <span>LF</span>
+        <span id="statusPos">Ln 1, Col 1</span>
+      </span>
+    </div>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
